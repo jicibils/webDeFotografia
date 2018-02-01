@@ -1,0 +1,303 @@
+body{
+  background-color: #02010a;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+  font-family: "Dancing Script";
+}
+
+#main-header {
+  font-family: "Dancing Script";
+	background: #5b7989;;
+	color: white;
+  /*height: 13vh;*/
+  height: 90px;
+  border-radius: 1vw 1vw 0vw 0vw;
+  /*width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */*/
+  /*left: 0; /* Posicionamos la cabecera al lado izquierdo */*/
+  /*top: 0; /* Posicionamos la cabecera pegada arriba */*/
+  position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+
+  #main-header a {
+  	color: white;
+  }
+
+#logo-header {
+	float: left;
+	/*padding: 25px 0 0 20px;*/
+  padding: 2vw 0 0 2vw;
+	text-decoration: none;
+  /*text-shadow: 2px 2px 2px #02010a;*/
+  text-shadow: 0.5vw 0.5vw 0.5vw #02010a;
+  font-family: "Dancing Script";
+
+}
+	#logo-header:hover {
+		color: #0b76a6;
+	}
+
+	#logo-header .site-name {
+		display: block;
+		font-weight: 600;
+		font-size: 1.7em;
+	}
+
+
+/*
+ * Navegación
+ */
+nav {
+	float: right;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 2vw;
+	}
+
+		nav ul li {
+			display: inline-block;
+			line-height: 13vh;
+		}
+
+			nav ul li a {
+				display: block;
+				padding: 0 0.5vw;
+				text-decoration: underline;
+			}
+
+				nav ul li a:hover {
+					background: #0b76a6;
+				}
+
+#contenido{
+	background-color: #d5c75f;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#contenido .fila1{
+	display: flex;
+	flex-direction: row;
+}
+#contenido .fila2{
+	display: flex;
+	flex-direction: row;
+}
+#im1,#im2,#im3,#im4,#im5,#im6{
+	width: 85%;
+	border: 0.2vw solid black;
+	margin: 2vw;
+	box-shadow: 0.3vw 0.3vw 0.3vw #02010a;
+	-webkit-box-shadow: 0.3vw 0.3vw 0.3vw #02010a;
+	-moz-box-shadow: 0.3vw 0.3vw 0.3vw #02010a;
+}
+
+#im1{
+	-webkit-filter:blur(10px);
+	filter: blur(10px);
+}
+
+#im2,#im4,#im6{
+	-webkit-filter:grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#im3{
+	-webkit-filter:sepia(90%);
+	filter: sepia(90%);
+}
+
+
+  footer #pie-de-pagina{
+    background-color: #C6d5c5;
+    width: 100%;
+    font-family: "Dancing Script";
+    border-radius: 0vw 0vw 1vw 1vw;
+    display: flex;
+  	flex-direction: row;
+  }
+
+  footer #pie-de-pagina span{
+    font-size: 1.5em;
+    margin-left: 3vw;
+    margin-top: 1vw;
+  }
+
+  footer div{
+    margin-bottom: 3vw;
+  }
+
+  footer div span{
+    margin-bottom: 1vw;
+  }
+
+  #contacto{
+    width: 25%;
+    border-radius: 0vw 0vw 0vw 1vw;
+    display: flex;
+    flex-direction: column;
+
+  }
+  #contacto a{
+    margin-left: 2vw;
+    margin-top: 0.5vw;
+
+  }
+
+
+
+  #terminos{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #redes{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+  #redes div{
+    font-size: 0.9em;
+    margin-bottom: 0;
+  }
+  #redes #ln{
+    margin-right: 1.6vw;
+  }
+  #redes #face{
+    margin-right: 6vw;
+  }
+  #redes #inst{
+    margin-right: 4.5vw;
+  }
+
+  #redes div img{
+    width: 1.5vw;
+    padding-bottom: 0.5vw;
+  }
+
+  #ln img {
+    float: left;
+  }
+  #ln a{
+    float: right;
+  }
+
+  #face img {
+    float: left;
+  }
+  #face a{
+    float: right;
+  }
+
+  #inst img {
+    float: left;
+  }
+  #inst a{
+    float: right;
+  }
+
+
+  #derechos{
+    width: 20%;
+    border-radius: 0vw 0vw 1vw 0vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  @keyframes header-animacion {
+    0% {
+      margin-top: 150%;
+    }
+    60% {
+      margin-top: -5%;
+    }
+    100% {
+      margin-top: 0%;
+    }
+  }
+
+  header{
+    animation-name: header-animacion;
+    animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    animation-delay: 0s;
+  }
+
+
+
+
+/****************************************************************************
+***************************************************************************
+***************************************************************************
+                                  MOVIL
+***************************************************************************
+***************************************************************************
+****************************************************************************/
+
+
+@media(max-width: 900px) {
+
+    body{
+      width: 100%;
+    }
+
+    #main-header{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      height: 130px;
+    }
+    #logo-header .site-name {
+      font-weight: 700;
+      font-size: 2.3em;
+
+    }
+
+    nav ul li a {
+      font-size: 1.5em;
+    }
+
+
+
+
+    footer #pie-de-pagina{
+      width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      padding-bottom: 3vw;
+    }
+
+    footer #pie-de-pagina #contacto, #terminos,#redes, #derechos {
+      margin-left: 35vw;
+    }
+    #redes{
+      text-align: left;
+    }
+    #redes #ln{
+      width: 50vw;
+    }
+    #redes #face{
+      width: 38vw;
+    }
+    #redes #inst{
+      width: 42vw;
+    }
+    #redes div img{
+      width: 3.5vw;
+      float: left;
+    }
+    #redes div a{
+      font-size: 3vw;
+    }
+
+  }
